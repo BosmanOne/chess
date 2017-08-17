@@ -1,0 +1,81 @@
+.grid-board {
+	margin: 0 auto;
+	position: relative;
+	width: 800px;
+	height: 800px;
+	border: 1px black solid;
+}
+
+.grid-square {
+	position: relative;
+	display: inline-block;
+	width: 12.5%;
+	height: 12.5%;
+}
+.square-light {
+	background-color: #E0FADC;
+}
+.square-dark {
+	background-color: #91C787;
+}
+.square-selected {
+	-webkit-box-shadow: 0px 0px 0px 1px #f00, inset 0px 0px 0px 1px #f00;
+	-moz-box-shadow: 0px 0px 0px 1px #f00, inset 0px 0px 0px 1px #f00;
+	box-shadow: 0px 0px 0px 1px #f00, inset 0px 0px 0px 1px #f00;
+	z-index: 3;
+}
+.square-possible-move {
+	-webkit-box-shadow: 0px 0px 0px 1px #44E, inset 0px 0px 0px 1px #44E;
+	-moz-box-shadow: 0px 0px 0px 1px #44E, inset 0px 0px 0px 1px #44E;
+	box-shadow: 0px 0px 0px 1px #44E, inset 0px 0px 0px 1px #44E;
+	z-index: 2;
+}
+
+.piece {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.interface {
+	margin: 0 auto;
+	position: relative;
+	width: 800px;
+	height: 100px;
+	border: 1px black solid;
+}
+.left-column {
+	float: left;
+}
+.right-column {
+	float: right;
+}
+.interface .left-column, .interface .right-column {
+	display: inline-block;
+	height: calc(100% - 10px);
+	width: 388px;
+	padding: 5px 5px 5px 5px;
+}
+
+.interface .display-status, .interface .interface-buttons {
+	display: inline-block;
+	width: 100%;
+	height: 45px;
+	text-align: center;
+}
+.display-status {
+	font-size: 2em;
+
+}
+.interface-buttons button{
+	font-size: 1.2em;
+}
+.figures-cementery {
+
+}
